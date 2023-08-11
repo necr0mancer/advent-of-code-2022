@@ -47,8 +47,21 @@ def getStackEnds():
 loadStacks()
 
 # Strip "words" from instruction set
+for step in instruct:
+    step = step.replace("move ", "").replace("from ", "").replace("to ", "").strip().split(" ")
+    step = [int(i) for i in step]
+    # print(step)
+    # Set variables for each value
+    crates = step[0]
+    from_stack = step[1]
+    to_stack = step[2]
+# Select crate [0] from range, remove from stack [1] and append to new home [2]
+    for crate in range(crates):
+        #move [1] to [2]
+        removed = stacks[from_stack].pop()
+        stacks[to_stack].append(removed)
 
-# Select crate (0) from range, remove from stack (1) and append to new home (2)
+
 
 
 
