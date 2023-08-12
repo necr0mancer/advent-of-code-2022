@@ -44,6 +44,8 @@ def getStackEnds():
         answer += stacks[stack][-1]
     return answer
 
+
+# Part 1
 loadStacks()
 
 # Strip "words" from instruction set
@@ -62,7 +64,23 @@ for step in instruct:
         stacks[to_stack].append(removed)
 
 
-
-
-
 print("Answer: ", getStackEnds())
+
+
+# Part 2
+emptyStacks()
+loadStacks()
+for step in instruct:
+    step = step.replace("move", "").replace("from ", "").replace("to ", "").strip().split(" ")
+    step = [int(i) for i in step]
+    crates = step[0]
+    from_stack = step[1]
+    to_stack = step[2]
+    
+    crates_to_remove = stacks[from_stack][-crates:]
+    stacks[from_stack] = stacks[from_stack][:-crates]
+    
+    for crate in crates_to_remove:
+        stacks[to_stack].append(crate)
+        
+print("part 2 answer: ", getStackEnds())

@@ -17,12 +17,21 @@ Then I wrote two functions for evaluating the score for single line of the input
 Finally there is the solution function which opens the input file in read mode and sums scores from all of the rounds in a list comprehension using evaluate_function_task_n function.
 
 ## Day 3
-> python
+> `python`
 
 1. split data lines in halves, set priorities and added them up
 2. grouped sets into 3s and found sum
 
 ## Day 4
-> python
+> `python`
 
 things
+
+## Day 5
+> `python`
+
+Notes are in code comments :\
+
+## Day 6
+> `python`
+
