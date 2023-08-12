@@ -35,3 +35,5 @@ Notes are in code comments :\
 ## Day 6
 > `python`
 
+Pretty easy, honestly. Code is self-explanatory, but basically just look for the first set of 4 letters without a duplicate and count how far we've gone
+
