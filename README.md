@@ -37,3 +37,7 @@ Notes are in code comments :\
 
 Pretty easy, honestly. Code is self-explanatory, but basically just look for the first set of 4 letters without a duplicate and count how far we've gone
 
+## Day 7
+> `python`
+
+derp.
