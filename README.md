@@ -41,3 +41,7 @@ Pretty easy, honestly. Code is self-explanatory, but basically just look for the
 > `python`
 
 derp.
+
+## Day 8
+> `python`
+
